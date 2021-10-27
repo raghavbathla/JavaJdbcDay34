@@ -8,8 +8,9 @@ public class ConnectionMain {
     public static void main(String[] args) throws SQLException {
        EmployeePayrollService service = new EmployeePayrollService();
        service.setConnection();
-
+        service.showData();
         service.getConnection().close();
+
 //        String sql = "UPDATE employee_payroll SET salary = '30000000' WHERE id = 2";
 //        stmt.executeUpdate(sql);
 //        ResultSet ms = stmt.executeQuery("select * from employee_payroll");
